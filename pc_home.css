@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/*   Style Sheet for the Layout of the Pandaisia Chocolates Home Page
+   Author: Will
+   Date:   03/03/23
+   */
+
+/* Body Styles */
+body {
+    width: 95%;
+    max-width: 960px;
+    min-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Body Header Styles */
+body > header > img {
+    display: block;
+    width: 100%;
+}
+header > nav.horizontalNavigation li{
+    width: 20%;    
+}
+
+/* Horizontal Navigation Styles */
+nav.horizontalNavigation li{
+    float: left;
+    display: block;
+}
+
+nav.horizontalNavigation a {
+    display:block;
+    text-align: center;
+}
+
+/* Left Column Styles */
+section#leftColumn{
+    clear: left;
+    width: 33%;
+    float: left;
+    padding: 1.5em;
+}
+
+
+/* Right Column Styles */
+section#rightColumn{
+    width: 67%;
+    float:left;
+}
+
+section#rightColumn img {
+    display: block;
+    width: 100%;
+}
+
+section#rightColumn > nav.horizontalNavigation li {
+   width: 25%;
+}
+
+/* Footer Styles */
+footer{
+    clear:left;
+    background-color: rgb(71, 52, 29);
+}
+
+footer::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+footer > nav.verticalNavigation {
+    width: 22%;
+    float: left;
+}
+
+footer > section#contactInfo {
+    width: 34%;
+    float:left;
+}
